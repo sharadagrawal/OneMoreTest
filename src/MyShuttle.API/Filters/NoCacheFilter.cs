@@ -7,6 +7,7 @@ namespace MyShuttle.API
     {
         public override void OnActionExecuted(ActionExecutedContext actionExecutedContext)
         {
+            //Check StatusCode
             if (actionExecutedContext.HttpContext.Response.StatusCode == 200 &&
                 actionExecutedContext.HttpContext.Response.Headers["CacheControl"] == null)
             {
