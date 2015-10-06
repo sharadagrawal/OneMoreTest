@@ -4,7 +4,6 @@ cd %~dp0
 SETLOCAL
 SET CACHED_NUGET=%LocalAppData%\NuGet\NuGet.exe
 
-echo Preparing environment...
 IF EXIST %CACHED_NUGET% goto copynuget
 echo Downloading latest version of NuGet.exe...
 IF NOT EXIST %LocalAppData%\NuGet md %LocalAppData%\NuGet
