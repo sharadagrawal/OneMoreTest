@@ -1,4 +1,4 @@
-﻿namespace MyShuttle.Dashboard.Client.ViewModels
+namespace MyShuttle.Dashboard.Client.ViewModels
 {
     using System;
     using System.Collections.Generic;
@@ -100,7 +100,7 @@
 
         private IEnumerable<VehicleMilesMonthResult> dataCache;
 
-        // TODO: Refactor
+        // TODO: Refactor. Bug#1112
         private async Task LoadCharDataPerMonth()
         {
             if (SelectedYear == 0) return;
