@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Windows.UI.Popups;
-// TODO
+// TODO Bug#1277
 //using WinRTXamlToolkit.Controls;
 
 namespace Chance.MvvmCross.Plugins.UserInteraction.WindowsStore
