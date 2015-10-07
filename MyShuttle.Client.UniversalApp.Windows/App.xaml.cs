@@ -1,4 +1,4 @@
-﻿using MyShuttle.Client.UniversalApp.Settings;
+using MyShuttle.Client.UniversalApp.Settings;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
@@ -50,12 +50,12 @@ namespace MyShuttle.Client.UniversalApp
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
 
-                // TODO: change this value to a cache size that is appropriate for your application
+                // TODO: change this value to a cache size that is appropriate for your app.
                 rootFrame.CacheSize = 1;
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
-                    // TODO: Load state from previously suspended application
+                    // TODO: Load state from previously suspended application. Low pri. Bug#1783
                 }
 
                 // Place the frame in the current Window
