@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,12 +20,11 @@ namespace MyShuttle.API.Model
 
         public Carrier Carrier { get; set; }
 
-
         public double RatingAvg { get; set; }
 
         public int TotalRides { get; set; }
 
-        public int? VehicleId { get; set; }         // Not used, only for mapping compatibility
+        public int? VehicleId { get; set; }         // Not used, only for compatibility
 
         public virtual ICollection<Vehicle> Vehicles { get; set; }    
 
