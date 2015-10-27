@@ -1,4 +1,4 @@
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
+errorusing Microsoft.IdentityModel.Clients.ActiveDirectory;
 using System;
 using System.Threading.Tasks;
 using Windows.Security.Authentication.Web;
@@ -98,7 +98,7 @@ namespace MyShuttle.Client.UniversalApp.Services
                 }
                 else
                 {
-                    MessageDialog dialog = new MessageDialog(string.Format("If the errorr continue, please contact your administrator.\n\nError: {0}\n\n Error Description:\n\n{1}", authResult.Error, authResult.ErrorDescription), "Sorry, an error occurred while signing you in.");
+                    MessageDialog dialog = new MessageDialog(string.Format("If the error continue, please contact your administrator.\n\nError: {0}\n\n Error Description:\n\n{1}", authResult.Error, authResult.ErrorDescription), "Sorry, an error occurred while signing you in.");
                     await dialog.ShowAsync();
                 }
             }
